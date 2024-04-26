@@ -11,15 +11,26 @@ const AboutUs = () => (
     </div>
 
     <div className='app__aboutus-content flex__center'>
+      
+      {/*Content On The Left Side Of The Section*/}
+      <div className='app__aboutus-content__about'>
+        <h1 className='headtext__cormorant'>About Us</h1>
+        <img src={images.spoon} alt='About Spoon' className='spoon__img'/>
+        <p className='p__opensans'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.</p>
+        <button type='button' className='custom__button'>Find Out More</button>
+      </div>
 
-    </div>
+      <div className='app__aboutus-content__knife flex__center'>
+        <img src={images.knife} alt='About Knife'/>
+      </div>
 
-    <div className='app__aboutus-content__knife flex__center'>
-      <img src={images.knife} alt='About Knife'/>
-    </div>
-
-    <div className='app__aboutus-content__history'>
-
+      {/*Content On The Right Side Of The Section*/}
+      <div className='app__aboutus-content__history'>
+        <h1 className='headtext__cormorant'>Our History</h1>
+        <img src={images.spoon} alt='About Spoon' className='spoon__img'/>
+        <p className='p__opensans'>Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. Risus placerat morbi volutpat habitasse interdum mi aliquam In sed odio nec aliquet.</p>
+        <button type='button' className='custom__button'>Find Out More</button>
+      </div>
     </div>
   </div>
 );
