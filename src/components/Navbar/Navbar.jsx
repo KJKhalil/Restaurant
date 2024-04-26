@@ -28,6 +28,7 @@ const Navbar = () => {
         <a href='/' className='p__opensans'>Book Table</a>
       </div>
 
+      {/*This Div Controls The useState To Turn The Navbar Into A Menu For Smaller Devices*/}
       <div className='app__navbar-smallscreen'>
         <GiHamburgerMenu color='#fff' fontSize={27} onClick={() => setToggleMenu(true)}/>
         
