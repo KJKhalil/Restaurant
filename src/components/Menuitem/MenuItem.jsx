@@ -1,3 +1,4 @@
+/*Sets Up The MenuItem Import For SpecialMenu.Jsx*/
 import React from 'react';
 import './MenuItem.css';
 
