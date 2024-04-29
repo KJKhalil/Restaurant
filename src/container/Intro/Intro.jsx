@@ -35,7 +35,7 @@ const Intro = () => {
         
         {/*Handles The Play/Pause Button For The Video "meal" Using const handleVideo*/}
         <div 
-          className='app__video-overlay__circle flex_center' 
+          className='app__video-overlay__circle flex__center' 
           onClick={handleVideo}
         >
           {playVideo
