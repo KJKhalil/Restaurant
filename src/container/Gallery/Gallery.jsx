@@ -31,6 +31,24 @@ const Gallery = () => {
         <p className='p__opensans' style={{ color: '#AAAAAA', marginTop: '2rem'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mu.</p>
         <button type='button' className='custom__button'>View More</button>
       </div>
+
+      {/*This Is Where const galleryImages Above Is Used To Map The Images Into The Gallery*/}
+      <div className='app__gallery-images'>
+        <div className='app__gallery-images__container' ref={scrollRef}>
+          {galleryImages.map((image, index) => (
+            <div className='app__gallery-images__card flex__center' key={`gallery_image-${index + 1}`}>
+              <img src={image} alt='Gallery'/>
+              <BsInstagram className='gallery__image-icon'/>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/*These Arrows Allow The User To Scroll Through The Gallery*/}
+      <div className='app__gallery-images__arrows'>
+        <BsArrowLeftShort className='gallery__arrow-icon' onClick={() => scroll('left')}/>
+        <BsArrowRightShort className='gallery__arrow-icon' onClick={() => scroll('right')}/>
+      </div>
     </div>
   );
 };
