@@ -42,12 +42,12 @@ const Gallery = () => {
             </div>
           ))}
         </div>
-      </div>
-
-      {/*These Arrows Allow The User To Scroll Through The Gallery*/}
-      <div className='app__gallery-images__arrows'>
-        <BsArrowLeftShort className='gallery__arrow-icon' onClick={() => scroll('left')}/>
-        <BsArrowRightShort className='gallery__arrow-icon' onClick={() => scroll('right')}/>
+      
+        {/*These Arrows Allow The User To Scroll Through The Gallery*/}
+        <div className='app__gallery-images__arrows'>
+          <BsArrowLeftShort className='gallery__arrow-icon' onClick={() => scroll('left')}/>
+          <BsArrowRightShort className='gallery__arrow-icon' onClick={() => scroll('right')}/>
+        </div>
       </div>
     </div>
   );
