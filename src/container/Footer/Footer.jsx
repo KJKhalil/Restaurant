@@ -8,6 +8,14 @@ const Footer = () => (
   <div className='app__footer section__padding' id='login'>
     <FooterOverlay/>
     <Newsletter/>
+
+    <div className='app__footer-links'></div>
+
+    <div className='app__footer-links__logo'></div>
+
+    <div className='app__footer-links__work'></div>
+
+    <div className='footer__copyright'></div>
   </div>
 );
 
