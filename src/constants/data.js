@@ -79,4 +79,5 @@ const awards = [
   },
 ];
 
-module.exports = { wines, cocktails, awards }
+// eslint-disable-next-line
+export default { wines, cocktails, awards }

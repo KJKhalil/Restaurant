@@ -21,7 +21,8 @@ import sign from '../assets/sign.png';
 import quote from '../assets/quote.png';
 import gericht from '../assets/gericht.png';
 
-module.exports = {
+// eslint-disable-next-line
+export default {
   bg,
   chef,
   G,
